@@ -1,0 +1,21 @@
+{
+  "name": "shipode",
+  "description": "Node.js based CLF log shipper.",
+  "version": "1.0.0",
+  "author": "Pedro Dias <petermdias@gmail.com>",
+  "maintainers": [
+    "apocas <petermdias@gmail.com>"
+  ],
+  "dependencies": {
+    "colors": "1.1.x",
+    "tail": "1.2.x",
+    "statsd-client": "0.2.x"
+  },
+  "main": "./main",
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "bin": {
+    "shipode": "./main.js"
+  }
+}
