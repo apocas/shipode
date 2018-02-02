@@ -4,7 +4,7 @@ var child_process = require('child_process');
 
 
 function startCollector() {
-  console.log('Spawning collector process.');
+  console.log('(shipode) Spawning collector process.');
   var collectorProcess = child_process.fork(__dirname + '/lib/collector/process');
 
   setTimeout(function() {
@@ -14,5 +14,5 @@ function startCollector() {
 }
 
 
-console.log('Shipper started.');
+console.log('(shipode) Shipper started.');
 startCollector();
