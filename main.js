@@ -15,7 +15,7 @@ function startCollector() {
 
 
 function exitHandler(options, err) {
-  collectorProcess.stop();
+  collectorProcess.kill('SIGHUP');
   process.exit();
 }
 
